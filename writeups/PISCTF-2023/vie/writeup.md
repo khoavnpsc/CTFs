@@ -2,6 +2,8 @@
 
 # Easy eBPF
 
+Cơ bản về eBPF: https://ebpf.io/what-is-ebpf/
+
 Đề cho ta 2 file, `chall` và `stdout`, `chall` là ELF executable còn `stdout` có thể được xem như 1 file text.
 
 Nội dung file `stdout`:
