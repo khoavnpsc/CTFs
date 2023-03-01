@@ -107,9 +107,9 @@ Hàm `run_ebpf()` làm một công việc duy nhất, đó là gọi `write()` �
 
 Việc cần làm là reverse code eBPF và viết script giải.
 
-## Viết dissasembler
+## Viết **disassembler**
 
-Thật ra cũng có thể tìm được dissasembler trên mạng, nhưng những dissasembler mình tìm được thì hoặc là thiếu instruction mình cần, hoặc là cho ra assembly không đúng ý mình. Mục tiêu là viết đủ opcode xuất hiện trong bài này nên nó cũng sẽ không dài lắm.
+Thật ra cũng có thể tìm được disassembler trên mạng, nhưng những disassembler mình tìm được thì hoặc là thiếu instruction mình cần, hoặc là cho ra assembly không đúng ý mình. Mục tiêu là viết đủ opcode xuất hiện trong bài này nên nó cũng sẽ không dài lắm.
 
 Tìm xem trong binary dùng những opcode nào.
 
@@ -332,3 +332,9 @@ for i in range(len(stdout_int) - 2):
     
 print(stdout_bytes) # b'PISCTF{I_h0p3_y0u_l1k3_eBPF_t3chN0l0gy}\x00\x00\x00\x00\x00'
 ```
+
+## Appendix
+
+eBPF disassembler code tại [đây](../scripts/Easy%20eBPF/ebpf-disassembler.py)
+
+Code giải bài tại [đây](../scripts/Easy%20eBPF/solve.py)
